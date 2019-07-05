@@ -21,6 +21,7 @@
     <div class="page-header">
         {% if user.is_authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <button class="top-menu"><a href="{% url 'post_feedback' %}">Feedback</a></button>
         {% endif %}
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>

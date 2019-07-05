@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>New feedback</h2>
+    <form  method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" class="save btn btn-default">
+    </form>
+{% endblock %}
